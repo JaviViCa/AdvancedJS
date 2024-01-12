@@ -22,4 +22,3 @@ const persons = [
 const nicknames = nicknameMap(persons);
 console.log(persons);
 console.log(nicknames);
-console.log(nicknames.length);
