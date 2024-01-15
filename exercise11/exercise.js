@@ -1,5 +1,7 @@
 function adultFilter(persons) {
-  // ...
+  let adults = []
+  adults = persons.filter((p)=>p.age >= 18).sort((y, o) => y.age - o.age)
+  return adults;
 }
 
 const persons = [
