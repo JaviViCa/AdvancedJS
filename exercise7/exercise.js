@@ -5,7 +5,7 @@ function printName() {
             console.log(helloName);
         }, 1000);
     }
-    return inner();
+    return inner;
 }
 
-printName();
+printName()();
