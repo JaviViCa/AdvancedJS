@@ -4,4 +4,7 @@ const person = {
   age: 25
 }
 
+Object.keys(person).forEach(key => {
+  console.log(`${key}/${person[key]}`);
+})
 // Print values of person using Object.keys
