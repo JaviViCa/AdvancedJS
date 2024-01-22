@@ -1,7 +1,24 @@
 function uncompletedNotes(notes) {
-  // ...
+  let uncompleted = [];
+  notes.forEach((note) => {
+    note.todos.filter((todo) => {
+      if (!todo.done) {
+        uncompleted.push({
+          id: note.id,
+          description: note.description,
+          todos: [
+            {
+              id: todo.id,
+              name: todo.name,
+              done: todo.done
+            }
+          ],
+        });
+      }
+    });
+  });
+  return uncompleted;
 }
-
 const notes = [
   {
     id: 1,
@@ -51,5 +68,5 @@ const notes = [
     ],
   },
 ];
-
-uncompletedNotes(notes);
+console.log(notes);
+console.log(uncompletedNotes(notes))
