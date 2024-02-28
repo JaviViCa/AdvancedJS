@@ -3,15 +3,15 @@
     <div id="container">
       <form>
         <div>
-          <label>First Name:</label>
+          <label for="firstName">First Name:</label>
           <input type="text" class="form-input" id="firstName" value="Mario"/>
         </div>
         <div>
-          <label>Last Name:</label>
+          <label for="lastName">Last Name:</label>
           <input type="text" class="form-input" id="lastName" value="Rossi"/>
         </div>
         <div>
-          <label>Age:</label>
+          <label for="age">Age:</label>
           <input type="number" class="form-input" id="age" value="25"/>
         </div>
       </form>
@@ -20,5 +20,13 @@
 </html>
 
 <script>
-  // code here
+  let firstNameLabel = document.querySelector('label[for="firstName"]').textContent;
+  let firstNameInput = document.getElementById("firstName").value;
+  console.log(firstNameLabel, firstNameInput);
+  let lastNameLabel = document.querySelector('label[for="lastName"]').textContent;
+  let lastNameInput = document.getElementById("lastName").value;
+  console.log(lastNameLabel, lastNameInput);
+  let ageLabel = document.querySelector('label[for="age"]').textContent;
+  let ageInput = document.getElementById("age").value;
+  console.log(ageLabel, ageInput);
 </script>
