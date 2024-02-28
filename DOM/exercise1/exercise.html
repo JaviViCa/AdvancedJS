@@ -20,5 +20,12 @@
 </html>
 
 <script>
-  // code here
+  // one way
+  let body = document.documentElement.children[1]
+  let firstNameInput = body.firstElementChild.firstElementChild.firstElementChild.children[1].getAttribute("value")
+  console.log(firstNameInput);
+
+  // Anothe way
+  let getfirstName = document.getElementById("firstName").value
+  console.log(getfirstName);
 </script>
